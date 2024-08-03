@@ -391,8 +391,9 @@ document.addEventListener('mousemove', () => {
 // Progress Bar
 audio.addEventListener('timeupdate', () => {
     const progress = (audio.currentTime / audio.duration) * 100;
-    document.querySelector('.progress-bar').style.width = ${progress}%;
+    document.querySelector('.progress-bar').style.width = `${progress}%`;
 });
+
 
 // Arrow Cursor to follow mouse
 document.addEventListener('mousemove', e => {
